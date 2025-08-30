@@ -20,17 +20,17 @@ const Header = () => {
         </motion.div>
 
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#" className="text-foreground hover:text-primary transition-colors">
+          <a href="/" className="text-foreground hover:text-primary transition-colors">
             Home
           </a>
-          <a href="#" className="text-foreground hover:text-primary transition-colors">
+          <a href="/try-on" className="text-foreground hover:text-primary transition-colors">
             Try On
           </a>
-          <a href="#" className="text-foreground hover:text-primary transition-colors">
+          <a href="/products" className="text-foreground hover:text-primary transition-colors">
             Products
           </a>
-          <a href="#" className="text-foreground hover:text-primary transition-colors">
-            About
+          <a href="/dashboard" className="text-foreground hover:text-primary transition-colors">
+            Dashboard
           </a>
         </div>
 
@@ -41,7 +41,7 @@ const Header = () => {
           <Button variant="ghost" size="icon">
             <User className="h-5 w-5" />
           </Button>
-          <Button variant="ghost" size="icon">
+          <Button variant="ghost" size="icon" onClick={() => window.location.href = '/cart'}>
             <ShoppingCart className="h-5 w-5" />
           </Button>
           <Button variant="ghost" size="icon" className="md:hidden">
